@@ -1,0 +1,87 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="SocketPlan.WinUI.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="SystemDirectory" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\UnitWiring\</Value>
+    </Setting>
+    <Setting Name="BlockDirectory" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\UnitWiring\Blocks\</Value>
+    </Setting>
+    <Setting Name="DrawingDirectory" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\UnitWiring\Drawings\</Value>
+    </Setting>
+    <Setting Name="ImageDirectory" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\UnitWiring\Images\</Value>
+    </Setting>
+    <Setting Name="SystemBlockDirectory" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\UnitWiring\SystemBlocks\</Value>
+    </Setting>
+    <Setting Name="ServerUserName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">denki_517@denki.hrd-s.com</Value>
+    </Setting>
+    <Setting Name="ServerPassword" Type="System.String" Scope="User">
+      <Value Profile="(Default)">sc1dv</Value>
+    </Setting>
+    <Setting Name="ServerSystemDirectory_Debug" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\\ksbu-share\【1G共通書類】\Projects\CHOPPER\仮想Denki-svr\マスタ\UnitWiring\</Value>
+    </Setting>
+    <Setting Name="ServerSystemDirectory_Release" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\\Denki-svr\SYSTEM\UnitWiring\</Value>
+    </Setting>
+    <Setting Name="ServerDrawingDirectories_Debug" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;\\Ksbu-ora11\【1g共通書類】\Projects\CHOPPER\仮想Denki-svr\UNIT WIRING DXF DATA\&lt;/string&gt;
+  &lt;string&gt;\\Ksbu-ora11\【1g共通書類】\Projects\CHOPPER\仮想Denki-svr\Section Files\PDR\&lt;/string&gt;
+  &lt;string&gt;\\Ksbu-ora11\【1g共通書類】\Projects\CHOPPER\仮想Denki-svr\Section Files\SHINSEI\&lt;/string&gt;
+  &lt;string&gt;\\Ksbu-ora11\【1g共通書類】\Projects\CHOPPER\仮想Denki-svr\Section Files\UNIT WIRING\&lt;/string&gt;
+  &lt;string&gt;\\Ksbu-ora11\【1g共通書類】\Projects\CHOPPER\仮想Denki-svr\Section Files\FBW\&lt;/string&gt;
+  &lt;string&gt;\\Ksbu-ora11\【1g共通書類】\Projects\CHOPPER\仮想Denki-svr\Section Files\SUJIKAI\&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="ServerDrawingDirectories_Release" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;\\Denki-svr\Section Files\UNIT WIRING DXF DATA\&lt;/string&gt;
+  &lt;string&gt;\\Denki-svr\Denkidata\AUTOCAD FILES\PDR\&lt;/string&gt;
+  &lt;string&gt;\\Denki-svr\Denkidata\AUTOCAD FILES\FBW\&lt;/string&gt;
+  &lt;string&gt;\\Denki-svr\Denkidata\AUTOCAD FILES\SUJIKAI\&lt;/string&gt;
+  &lt;string&gt;\\Denki-svr\Denkidata\AUTOCAD FILES\SICKHOUSE\&lt;/string&gt;
+  &lt;string&gt;\\Denki-svr\Denkidata\AUTOCAD FILES\BRANCH\&lt;/string&gt;
+  &lt;string&gt;\\Denki-svr\Denkidata\AUTOCAD FILES\GC\&lt;/string&gt;
+  &lt;string&gt;\\Denki-svr\Denkidata\AUTOCAD FILES\HENKOU\&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="DrawingPrefixes" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;HPD&lt;/string&gt;
+  &lt;string&gt;HSH&lt;/string&gt;
+  &lt;string&gt;HUW&lt;/string&gt;
+  &lt;string&gt;HSA&lt;/string&gt;
+  &lt;string&gt;HJA&lt;/string&gt;
+  &lt;string&gt;HHY&lt;/string&gt;
+  &lt;string&gt;HZA&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="LightSerialCsvExportDirectory_Debug" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\UnitWiring_CSV\</Value>
+    </Setting>
+    <Setting Name="LightSerialCsvExportDirectory_Release" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\\Sy_sv1\UnitWiring_CSV\</Value>
+    </Setting>
+    <Setting Name="ExportedCSVPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\UnitWiringTest\Exported\</Value>
+    </Setting>
+    <Setting Name="MasterMaintenanceUrl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://hrdapps66/CHOPPER2013PS5/SocketPlanMasterMaintenance/SocketPlanMasterMaintenance.application</Value>
+    </Setting>
+    <Setting Name="LocalSystemDirectory" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\UnitWiring\</Value>
+    </Setting>
+    <Setting Name="SocketPlan_WinUI_SocketPlanServiceReference_SocketPlanService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://hrdapps22/SocketPlan/SocketPlanService.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

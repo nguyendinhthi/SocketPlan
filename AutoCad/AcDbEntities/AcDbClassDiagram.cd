@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Edsa.AutoCadProxy.AbstractViewportTable" Collapsed="true">
+    <Position X="7.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>AcDbEntities\AbstractViewportTable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Edsa.AutoCadProxy.ViewportTableRecord" Collapsed="true">
+    <Position X="22.25" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>AcDbEntities\ViewportTableRecord.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Edsa.AutoCadProxy.AbstractViewTableRecord" Collapsed="true">
+    <Position X="22.25" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>AcDbEntities\AbstractViewTableRecord.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Edsa.AutoCadProxy.Arc" Collapsed="true">
+    <Position X="14.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAIAAAA=</HashCode>
+      <FileName>AcDbEntities\Arc.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Edsa.AutoCadProxy.Attribute" Collapsed="true">
+    <Position X="18.25" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAIAAAAIAAAA=</HashCode>
+      <FileName>AcDbEntities\Attribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Edsa.AutoCadProxy.BlockReference" Collapsed="true">
+    <Position X="13" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACCAAAAAQAAAAAAAABAAAABAIIBAAAIAAAA=</HashCode>
+      <FileName>AcDbEntities\BlockReference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Edsa.AutoCadProxy.BlockTable" Collapsed="true">
+    <Position X="9.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAgAAAAAAAAAAAAAAAAAACAAAAQAAIAgAAAAAAA=</HashCode>
+      <FileName>AcDbEntities\BlockTable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Edsa.AutoCadProxy.BlockTableRecord" Collapsed="true">
+    <Position X="18.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAICAAAAAAAAAAAAAAAAAAAIAAAAAAJAA=</HashCode>
+      <FileName>AcDbEntities\BlockTableRecord.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Edsa.AutoCadProxy.Curve" Collapsed="true">
+    <Position X="9.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQIAAAAAAAAAAEBAAAAAAAAQAAAAAAAoAAQAAAAAg=</HashCode>
+      <FileName>AcDbEntities\Curve.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Edsa.AutoCadProxy.Database" Collapsed="true">
+    <Position X="18.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEABAAAAAEQAAQAAAAAAAAQAAASAAAIAAAIAA=</HashCode>
+      <FileName>AcDbEntities\Database.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Edsa.AutoCadProxy.Dictionary" Collapsed="true">
+    <Position X="16.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>AcDbEntities\Dictionary.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Edsa.AutoCadProxy.Dimension" Collapsed="true">
+    <Position X="14.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAABAAAAAEAAAAAAAAIAAIAAAAAA=</HashCode>
+      <FileName>AcDbEntities\Dimension.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Edsa.AutoCadProxy.Ellipse" Collapsed="true">
+    <Position X="7.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAIAAAA=</HashCode>
+      <FileName>AcDbEntities\Ellipse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Edsa.AutoCadProxy.Entity" Collapsed="true">
+    <Position X="13.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACQAEIAAAAAEAAAACAEgAlAIAAAAEAAAohAAEAAAAI=</HashCode>
+      <FileName>AcDbEntities\Entity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Edsa.AutoCadProxy.LayerTable" Collapsed="true">
+    <Position X="14.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAEAAAAAAAAAAgAAAEIAAAAAAAAA=</HashCode>
+      <FileName>AcDbEntities\LayerTable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Edsa.AutoCadProxy.LayerTableRecord" Collapsed="true">
+    <Position X="24" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQIIAAAAAIAAAAAAAAAAEAAAAABAAAAIgAAAIAAAA=</HashCode>
+      <FileName>AcDbEntities\LayerTableRecord.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Edsa.AutoCadProxy.Layout" Collapsed="true">
+    <Position X="21.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAoAAAAAABAA=</HashCode>
+      <FileName>AcDbEntities\Layout.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Edsa.AutoCadProxy.Leader" Collapsed="true">
+    <Position X="16.25" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAAAACAAAIAAAAIAAAA=</HashCode>
+      <FileName>AcDbEntities\Leader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Edsa.AutoCadProxy.Line" Collapsed="true">
+    <Position X="9.25" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>AcDbEntities\Line.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Edsa.AutoCadProxy.LinetypeTable" Collapsed="true">
+    <Position X="13" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAEAAAA=</HashCode>
+      <FileName>AcDbEntities\LinetypeTable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Edsa.AutoCadProxy.MText" Collapsed="true">
+    <Position X="7.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAgAQAAggACIACAAIAAAA=</HashCode>
+      <FileName>AcDbEntities\MText.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Edsa.AutoCadProxy.Object" Collapsed="true">
+    <Position X="20.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAABAAAQAABABAIAAAAAAACAAAAAAAAIAIAAIAAgA=</HashCode>
+      <FileName>AcDbEntities\Object.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Edsa.AutoCadProxy.PlotSettings" Collapsed="true">
+    <Position X="21.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>AcDbEntities\PlotSettings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Edsa.AutoCadProxy.Point" Collapsed="true">
+    <Position X="16.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>AcDbEntities\Point.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Edsa.AutoCadProxy.Polyline" Collapsed="true">
+    <Position X="11" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAoAAAAIAACA=</HashCode>
+      <FileName>AcDbEntities\Polyline.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Edsa.AutoCadProxy.Ray" Collapsed="true">
+    <Position X="12.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAIAAAA=</HashCode>
+      <FileName>AcDbEntities\Ray.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Edsa.AutoCadProxy.RegAppTable" Collapsed="true">
+    <Position X="16.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAMAAAA=</HashCode>
+      <FileName>AcDbEntities\RegAppTable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Edsa.AutoCadProxy.SymbolTable" Collapsed="true">
+    <Position X="12" Y="9" Width="1.5" />
+    <InheritanceLine Type="Edsa.AutoCadProxy.Object" ManuallyRouted="true">
+      <Path>
+        <Point X="21" Y="3.543" />
+        <Point X="21" Y="8.625" />
+        <Point X="12.75" Y="8.625" />
+        <Point X="12.75" Y="9" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>AcDbEntities\SymbolTable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Edsa.AutoCadProxy.SymbolTableRecord" Collapsed="true">
+    <Position X="21.5" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>AcDbEntities\SymbolTableRecord.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Edsa.AutoCadProxy.Text" Collapsed="true">
+    <Position X="18.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAIAAACAAAAQIAIgAAACAAAQAAAhAAIACAAIAAgA=</HashCode>
+      <FileName>AcDbEntities\Text.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Edsa.AutoCadProxy.TextStyleTable" Collapsed="true">
+    <Position X="11.25" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAMAAAA=</HashCode>
+      <FileName>AcDbEntities\TextStyleTable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Edsa.AutoCadProxy.TextStyleTableRecord" Collapsed="true">
+    <Position X="20.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAIAAAAIAAAA=</HashCode>
+      <FileName>AcDbEntities\TextStyleTableRecord.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Edsa.AutoCadProxy.Utility" Collapsed="true">
+    <Position X="15" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAAAAAACEAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AcDbEntities\Utility.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Edsa.AutoCadProxy.Viewport" Collapsed="true">
+    <Position X="11.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAIAAEAAAAAAAAAAAQAAEAAAoQAEAIAAAQ=</HashCode>
+      <FileName>AcDbEntities\Viewport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Edsa.AutoCadProxy.ViewportTable" Collapsed="true">
+    <Position X="7.75" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAIAAAA=</HashCode>
+      <FileName>AcDbEntities\ViewportTable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="MS UI Gothic" Size="9" />
+</ClassDiagram>

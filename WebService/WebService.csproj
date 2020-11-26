@@ -1,0 +1,370 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{908030D3-77DE-4806-9A90-155E3ED96BA5}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SocketPlan.WebService</RootNamespace>
+    <AssemblyName>SocketPlan.WebService</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Edsa.Data, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\Edsa.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SocketPlanService.asmx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Entities\HouseConstructionMaterial.cs" />
+    <Compile Include="Entities\HouseConstructionMaterial.Partial.cs" />
+    <Compile Include="Entities\HRDInformationService\Generated\BasicSpecificationDetail.cs" />
+    <Compile Include="Entities\HRDInformationService\Generated\Construction.cs" />
+    <Compile Include="Entities\HRDInformationService\Generated\ConstructionSchedule.cs" />
+    <Compile Include="Entities\HRDInformationService\Generated\Employee.cs" />
+    <Compile Include="Entities\HRDInformationService\Generated\EmployeeLisence.cs" />
+    <Compile Include="Entities\HRDInformationService\Generated\House.cs" />
+    <Compile Include="Entities\HRDInformationService\Generated\Prefecture.cs" />
+    <Compile Include="Entities\HRDInformationService\Generated\RoomLayout.cs" />
+    <Compile Include="Entities\HRDInformationService\Generated\RoomLayoutsForKibiroi.cs" />
+    <Compile Include="Entities\HRDInformationService\Generated\ShipmentRequest.cs" />
+    <Compile Include="Entities\HRDInformationService\Generated\SpecificationProductDetail.cs" />
+    <Compile Include="Entities\HRDInformationService\Partial\BasicSpecificationDetail.Partial.cs" />
+    <Compile Include="Entities\HRDInformationService\Partial\Construction.Partial.cs" />
+    <Compile Include="Entities\HRDInformationService\Partial\ConstructionSchedule.Partial.cs" />
+    <Compile Include="Entities\HRDInformationService\Partial\House.Partial.cs" />
+    <Compile Include="Entities\HRDInformationService\Partial\RoomLayout.Partial.cs" />
+    <Compile Include="Entities\HRDInformationService\Partial\RoomLayoutsForKibiroi.Partial.cs" />
+    <Compile Include="Entities\HRDInformationService\Partial\ShipmentRequest.Partial.cs" />
+    <Compile Include="Entities\HRDInformationService\Partial\SpecificationProductDetail.Partial.cs" />
+    <Compile Include="Entities\OptionPickingResult.cs" />
+    <Compile Include="Entities\Photovoltaic\Generated\SpcadCLInfo.cs" />
+    <Compile Include="Entities\Photovoltaic\Generated\SpcadPlanInfo.cs" />
+    <Compile Include="Entities\Photovoltaic\Generated\SpcadPlanInfos_Extract.cs" />
+    <Compile Include="Entities\Photovoltaic\Partial\SpcadCLInfo.Partial.cs" />
+    <Compile Include="Entities\SekisanDataBroker\Generated\Item.cs" />
+    <Compile Include="Entities\SekisanDataBroker\Generated\ItemStructure.cs" />
+    <Compile Include="Entities\SekisanDataBroker\Generated\SekisanMaterial.cs" />
+    <Compile Include="Entities\SekisanDataBroker\Generated\SekisanMaterialDetail.cs" />
+    <Compile Include="Entities\SekisanDataBroker\Generated\Unit.cs" />
+    <Compile Include="Entities\SekisanDataBroker\Partial\Item.Partial.cs" />
+    <Compile Include="Entities\SekisanDataBroker\Partial\SekisanMaterial.Partial.cs" />
+    <Compile Include="Entities\SekisanDataBroker\Partial\SekisanMaterialDetail.Partial.cs" />
+    <Compile Include="Entities\SiyoDataBroker\Generated\tbl_siyo_boss.cs" />
+    <Compile Include="Entities\SiyoDataBroker\Generated\tbl_siyo_heya.cs" />
+    <Compile Include="Entities\SiyoDataBroker\Generated\tbl_siyo_kanri.cs" />
+    <Compile Include="Entities\SiyoDataBroker\Generated\tbl_siyo_kihon.cs" />
+    <Compile Include="Entities\SiyoDataBroker\Generated\tbl_siyo_syohin.cs" />
+    <Compile Include="Entities\SiyoDataBroker\Partial\tbl_siyo_boss.Partial.cs" />
+    <Compile Include="Entities\SiyoDataBroker\Partial\tbl_siyo_heya.Partial.cs" />
+    <Compile Include="Entities\SiyoDataBroker\Partial\tbl_siyo_kanri.Partial.cs" />
+    <Compile Include="Entities\SiyoDataBroker\Partial\tbl_siyo_kihon.Partial.cs" />
+    <Compile Include="Entities\SiyoDataBroker\Partial\tbl_siyo_syohin.Partial.cs" />
+    <Compile Include="Entities\SiyoDataBroker\SiyoHeya.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\ApprovalLog.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\Block.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\BoxSerial.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\ClosetText.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\Comment.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\CommentCategory.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\CommentSpecification.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\CommentStandardRoom.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\ContractAmpere.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\ContractVa.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\ConvertionLightSerials.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\CtBox.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\CtCable.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\CupboardSerial.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\CustomAction.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\DefaultPartsColor.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\DrawingParameter.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\ElectricCompany.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\ElectricContract.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\Equipment.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\EquipmentCustomAction.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\EquipmentKind.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\EquipmentSpecification.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\ExportLightSerialConstruction.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\FloorText.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\HemsBlock.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\HemsDevice.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\HemsItemDetail.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\HemsLog.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\HemsRoom.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\HemsRoomBlock.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\HouseType.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\HouseTypeGroup.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\HouseTypeGroupDetail.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\HouseTypeGroupDetails_New.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\HouseTypeGroupDetails_Old.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\HouseTypeGroupStandardItems_New.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\HouseTypeGroupStandardItems_Old.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\HouseTypeGroups_New.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\HouseTypeGroups_Old.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\InteriorEstimateRoom.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\InvalidDownLightSerial.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\JboxColor.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\JboxColorEntry.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\JboxItem.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\KaiheikiSerial.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\KansenAllowance.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\KansenBuzaiItem.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\Layout.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\LayoutText.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\LightElectrical.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\LightElectricalWireKind.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\LightSerial.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\LightSerialCategory.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\LightSerialCsv.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\LightSerialItem.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\LightSerialUpdateList.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\MaintenanceScript.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\NewHouseTypeGroup.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\NotElectricControlConstructions.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\NotNameHotaruSwitch.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\NotNameHotaruSwitchSerial.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\OptionPickingItem.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\OptionPickingItemsEx.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\OptionPickingLog.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\PartsColor.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\PartsColorEntry.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\PendantLightSerial.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\ProcessLog.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\ProductItem.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\ProductVa.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\Query.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\RelatedEquipment.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\RemoconDetail.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\RemoconItem.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\RemoconZumenItems.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\RimokonNiche.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\RimokonNicheDetail.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\RimokonNicheEntry.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\RimokonNicheHolePattern.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\RimokonNichePattern.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\Room.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\RoomStandardNewItem.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\RoomStandardOldItem.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\SekisanMaterial.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\SekisanMaterialDetail.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\SelectionCategory.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\SelectionCategoryDetail.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\Setting.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\SettingKind.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\ShikakuTableEntry.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\SingleSocketBoxEquipment.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\SocketBoxCategory.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\SocketBoxDetailComment.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\SocketBoxDetailSpecific.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\SocketBox.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\SocketBoxPattern.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\SocketBoxPatternColor.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\SocketBoxPatternDetail.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\SocketBoxPickingItem.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\SocketBoxSpecific.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\SocketBoxSpecificCategory.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\SocketBoxSpecificRelation.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\SocketPlanLog.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\SocketPlanMaintenanceLog.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\SocketPlanMaintenance_CommentLog.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\SocketPlanMaintenance_EquipmentLog.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\SolarBreaker.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\SolarComposition.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\Specification.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\SubeteExempleEquipment.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\SwitchLightSerial.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\Text.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\TextItem.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\UsableBracketLightSerial.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\UsableLightSerial.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\UsableRohmOfLightSerials.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\User.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\UsingIrisohyamaLightConstruction.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\WireItem.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\WirePickingReportLog.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\WireSerial.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\XGWSettingReport.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\XGWSettingReportLog.cs" />
+    <Compile Include="Entities\UnitWiring\Generated\YojoBreaker.cs" />
+    <Compile Include="Entities\UnitWiring\HouseTypeGroupStandardItem.cs" />
+    <Compile Include="Entities\UnitWiring\Partial\Block.Partial.cs" />
+    <Compile Include="Entities\UnitWiring\Partial\Comment.Partial.cs" />
+    <Compile Include="Entities\UnitWiring\Partial\CommentCategory.Partial.cs" />
+    <Compile Include="Entities\UnitWiring\Partial\CommentSpecification.Partial.cs" />
+    <Compile Include="Entities\UnitWiring\Partial\CommentStandardRoom.Partial.cs" />
+    <Compile Include="Entities\UnitWiring\Partial\ContractAmpere.Partial.cs" />
+    <Compile Include="Entities\UnitWiring\Partial\ContractVa.Partial.cs" />
+    <Compile Include="Entities\UnitWiring\Partial\ConvertionLightSerials.Partial.cs" />
+    <Compile Include="Entities\UnitWiring\Partial\CtBox.Partial.cs" />
+    <Compile Include="Entities\UnitWiring\Partial\DrawingParameter.Partial.cs" />
+    <Compile Include="Entities\UnitWiring\Partial\Equipment.Partial.cs" />
+    <Compile Include="Entities\UnitWiring\Partial\EquipmentCustomAction.Partial.cs" />
+    <Compile Include="Entities\UnitWiring\Partial\EquipmentSpecification.Partial.cs" />
+    <Compile Include="Entities\UnitWiring\Partial\HemsBlock.Partial.cs" />
+    <Compile Include="Entities\UnitWiring\Partial\HemsDevice.Partial.cs" />
+    <Compile Include="Entities\UnitWiring\Partial\HemsItemDetail.Partial.cs" />
+    <Compile Include="Entities\UnitWiring\Partial\HemsLog.Partial.cs" />
+    <Compile Include="Entities\UnitWiring\Partial\HemsRoom.Partial.cs" />
+    <Compile Include="Entities\UnitWiring\Partial\HemsRoomBlock.Partial.cs" />
+    <Compile Include="Entities\UnitWiring\Partial\HouseTypeGroup.Partial.cs" />
+    <Compile Include="Entities\UnitWiring\Partial\HouseTypeGroupDetail.Partial.cs" />
+    <Compile Include="Entities\UnitWiring\Partial\HouseTypeGroupStandardItems_New.Partial.cs" />
+    <Compile Include="Entities\UnitWiring\Partial\HouseTypeGroupStandardItems_Old.Partial.cs" />
+    <Compile Include="Entities\UnitWiring\Partial\InteriorEstimateRoom.Partial.cs" />
+    <Compile Include="Entities\UnitWiring\Partial\JboxColorEntry.Partial.cs" />
+    <Compile Include="Entities\UnitWiring\Partial\JboxItem.Partial.cs" />
+    <Compile Include="Entities\UnitWiring\Partial\KansenAllowance.Partial.cs" />
+    <Compile Include="Entities\UnitWiring\Partial\KansenBuzaiItem.Partial.cs" />
+    <Compile Include="Entities\UnitWiring\Partial\LayoutText.Partial.cs" />
+    <Compile Include="Entities\UnitWiring\Partial\LightSerial.Partial.cs" />
+    <Compile Include="Entities\UnitWiring\Partial\LightSerialCategory.Partial.cs" />
+    <Compile Include="Entities\UnitWiring\Partial\LightSerialCsv.Partial.cs" />
+    <Compile Include="Entities\UnitWiring\Partial\NotNameHotaruSwitch.Partial.cs" />
+    <Compile Include="Entities\UnitWiring\Partial\NotNameHotaruSwitchSerial.Partial.cs" />
+    <Compile Include="Entities\UnitWiring\Partial\OptionPickingItem.Partial.cs" />
+    <Compile Include="Entities\UnitWiring\Partial\OptionPickingItemsEx.Partial.cs" />
+    <Compile Include="Entities\UnitWiring\Partial\OptionPickingLog.Partial.cs" />
+    <Compile Include="Entities\UnitWiring\Partial\PartsColorEntry.Partial.cs" />
+    <Compile Include="Entities\UnitWiring\Partial\PendantLightSerial.Partial.cs" />
+    <Compile Include="Entities\UnitWiring\Partial\ProcessLog.Partial.cs" />
+    <Compile Include="Entities\UnitWiring\Partial\ProductItem.Partial.cs" />
+    <Compile Include="Entities\UnitWiring\Partial\ProductVa.Partial.cs" />
+    <Compile Include="Entities\UnitWiring\Partial\RelatedEquipment.Partial.cs" />
+    <Compile Include="Entities\UnitWiring\Partial\RimoconDetail.Partial.cs" />
+    <Compile Include="Entities\UnitWiring\Partial\RimokonNiche.Partial.cs" />
+    <Compile Include="Entities\UnitWiring\Partial\RimokonNicheDetail.cs" />
+    <Compile Include="Entities\UnitWiring\Partial\RimokonNicheEntry.cs" />
+    <Compile Include="Entities\UnitWiring\Partial\RimokonNichePattern.Partial.cs" />
+    <Compile Include="Entities\UnitWiring\Partial\Room.Partial.cs" />
+    <Compile Include="Entities\UnitWiring\Partial\RoomStandardNewItem.Partial.cs" />
+    <Compile Include="Entities\UnitWiring\Partial\RoomStandardOldItem.Partial.cs" />
+    <Compile Include="Entities\UnitWiring\Partial\SekisanMaterial.Partial.cs" />
+    <Compile Include="Entities\UnitWiring\Partial\SekisanMaterialDetail.Partial.cs" />
+    <Compile Include="Entities\UnitWiring\Partial\SelectionCategory.Partial.cs" />
+    <Compile Include="Entities\UnitWiring\Partial\SelectionCategoryDetail.Partial.cs" />
+    <Compile Include="Entities\UnitWiring\Partial\Setting.Partial.cs" />
+    <Compile Include="Entities\UnitWiring\Partial\ShikakuTableEntry.Partial.cs" />
+    <Compile Include="Entities\UnitWiring\Partial\SingleSocketBoxEquipment.Partial.cs" />
+    <Compile Include="Entities\UnitWiring\Partial\SocketBox.Partial.cs" />
+    <Compile Include="Entities\UnitWiring\Partial\SocketBoxCategory.Partial.cs" />
+    <Compile Include="Entities\UnitWiring\Partial\SocketBoxDetailComment.Partial.cs" />
+    <Compile Include="Entities\UnitWiring\Partial\SocketBoxPattern.Partial.cs" />
+    <Compile Include="Entities\UnitWiring\Partial\SocketBoxPatternColor.Partial.cs" />
+    <Compile Include="Entities\UnitWiring\Partial\SocketBoxPatternDetail.Partial.cs" />
+    <Compile Include="Entities\UnitWiring\Partial\SocketBoxPickingItem.Partial.cs" />
+    <Compile Include="Entities\UnitWiring\Partial\SocketBoxSpecific.Partial.cs" />
+    <Compile Include="Entities\UnitWiring\Partial\SocketBoxSpecificCategory.Partial.cs" />
+    <Compile Include="Entities\UnitWiring\Partial\SocketBoxSpecificRelation.Partial.cs" />
+    <Compile Include="Entities\UnitWiring\Partial\SocketPlanMaintenanceLog.Partial.cs" />
+    <Compile Include="Entities\UnitWiring\Partial\SolarBreaker.Partial.cs" />
+    <Compile Include="Entities\UnitWiring\Partial\SolarComposition.Partial.cs" />
+    <Compile Include="Entities\UnitWiring\Partial\SpecificationProductDetail.Partial.cs" />
+    <Compile Include="Entities\UnitWiring\Partial\SubeteExempleEquipment.Partial.cs" />
+    <Compile Include="Entities\UnitWiring\Partial\Text.Partial.cs" />
+    <Compile Include="Entities\UnitWiring\Partial\TextItem.Partial.cs" />
+    <Compile Include="Entities\UnitWiring\Partial\UsableBracketLightSerial.Partial.cs" />
+    <Compile Include="Entities\UnitWiring\Partial\UsableLightSerial.Partial.cs" />
+    <Compile Include="Entities\UnitWiring\Partial\UsableRohmOfLightSerials.Partial.cs" />
+    <Compile Include="Entities\UnitWiring\Partial\XGWSettingReportLogs.Partial.cs" />
+    <Compile Include="Entities\UnitWiring\Partial\YojoBreaker.Partial.cs" />
+    <Compile Include="Entities\UnitWiring\RoomStandardItem.cs" />
+    <Compile Include="Entities\UnitWiring\ShikakuTableItem.cs" />
+    <Compile Include="Entities\UnitWiring\ShikakuTableNewIPaletteItem.cs" />
+    <Compile Include="Entities\UnitWiring\ShikakuTableNewItem.cs" />
+    <Compile Include="Entities\UnitWiring\ShikakuTableOldIPaletteItem.cs" />
+    <Compile Include="Entities\UnitWiring\ShikakuTableOldItem.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="SocketPlanService.asmx.cs">
+      <DependentUpon>SocketPlanService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51961</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/SocketPlan/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

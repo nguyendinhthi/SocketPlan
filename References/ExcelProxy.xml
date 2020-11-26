@@ -1,0 +1,415 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ExcelProxy</name>
+    </assembly>
+    <members>
+        <member name="M:Edsa.MSOffice.ExcelSheetProxy.Get(System.Int32,System.Int32)">
+            <summary>
+            指定したセルの値を取得する
+            </summary>
+            <param name="rowNo"></param>
+            <param name="columnNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Edsa.MSOffice.ExcelSheetProxy.Set(System.Int32,System.Int32,System.Object)">
+            <summary>
+            指定したセルに値を入力する
+            セルの指定は(rowIndex, columnIndex)
+            </summary>
+            <param name="rowNo"></param>
+            <param name="columnNo"></param>
+            <param name="val"></param>
+        </member>
+        <member name="M:Edsa.MSOffice.ExcelSheetProxy.Set(System.Data.DataTable,System.String,System.Boolean)">
+            <summary>
+            開始位置を指定して、DataTableの中身をExcelに出力します。
+            </summary>
+            <param name="table"></param>
+            <param name="startPosition"></param>
+            <param name="withHeader"></param>
+        </member>
+        <member name="M:Edsa.MSOffice.ExcelSheetProxy.Set(System.Object[0:,0:],System.String)">
+            <summary>
+            startPositionは"A2"とかそーユーの
+            </summary>
+            <param name="values"></param>
+            <param name="startPosition"></param>
+        </member>
+        <member name="M:Edsa.MSOffice.ExcelSheetProxy.Join(System.String,System.String)">
+            <summary>
+            startPosition、endPositionは"A2"とかそーユーの
+            </summary>
+            <param name="startPosition"></param>
+            <param name="endPosition"></param>
+        </member>
+        <member name="M:Edsa.MSOffice.ExcelSheetProxy.SetUnderLineOn(System.Int32,System.Int32)">
+            <summary>
+            下線をひく
+            対象セルは(1,1)～(rowInex, columnIndex)まで
+            </summary>
+            <param name="rowIndex"></param>
+            <param name="columnIndex"></param>
+        </member>
+        <member name="M:Edsa.MSOffice.ExcelSheetProxy.SetUnderLineOn(System.String,System.String)">
+            <summary>
+            下線をひく
+            対象セルはstartPositionセルからendPositionセルまで
+            </summary>
+            <param name="startPosition"></param>
+            <param name="endPosition"></param>
+        </member>
+        <member name="M:Edsa.MSOffice.ExcelSheetProxy.SetBoldOn(System.Int32,System.Int32)">
+            <summary>
+            太字にする
+            対象セルは(1,1)～(rowIndex, columnIndex)まで
+            </summary>
+            <param name="rowIndex"></param>
+            <param name="columnIndex"></param>
+        </member>
+        <member name="M:Edsa.MSOffice.ExcelSheetProxy.SetBoldOn(System.String,System.String)">
+            <summary>
+            太字にする
+            対象セルはstartPositionセルからendPositionセルまで
+            </summary>
+            <param name="startPosition"></param>
+            <param name="endPosition"></param>
+        </member>
+        <member name="M:Edsa.MSOffice.ExcelSheetProxy.SetFontSize(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            セルのフォントサイズを指定したサイズにする
+            対象セルは(1,1)～(rowIndex, columnIndex)まで
+            </summary>
+            <param name="rowIndex"></param>
+            <param name="columnIndex"></param>
+            <param name="size"></param>
+        </member>
+        <member name="M:Edsa.MSOffice.ExcelSheetProxy.SetFontSize(System.String,System.String,System.Int32)">
+            <summary>
+            セルのフォントサイズを指定したサイズにする
+            対象セルはstartPositionセルからendPositionセルまで
+            </summary>
+            <param name="startPosition"></param>
+            <param name="endPosition"></param>
+            <param name="size"></param>
+        </member>
+        <member name="M:Edsa.MSOffice.ExcelSheetProxy.SetWrapTextOn(System.Int32,System.Int32)">
+            <summary>
+            セルの文字制御を「折り返して全体を表示する」
+            対象セルは(1,1)～(rowIndex, columnIndex)まで
+            </summary>
+            <param name="rowIndex"></param>
+            <param name="columnIndex"></param>
+        </member>
+        <member name="M:Edsa.MSOffice.ExcelSheetProxy.SetWrapTextOn(System.String,System.String)">
+            <summary>
+            セルの文字制御を「折り返して全体を表示する」
+            対象セルはstartPositionセルからendPositionセルまで
+            </summary>
+            <param name="startPosition"></param>
+            <param name="endPosition"></param>
+        </member>
+        <member name="M:Edsa.MSOffice.ExcelSheetProxy.SetLineStyle(System.String,System.String,Microsoft.Office.Interop.Excel.XlBordersIndex,Microsoft.Office.Interop.Excel.XlLineStyle,Microsoft.Office.Interop.Excel.XlBorderWeight)">
+            <summary>
+            セルに罫線をひく
+            太さ・罫線をひく位置(上下左右)・線の種類を指定できる
+            対象セルはstartPositionセルからendPositionセルまで
+            </summary>
+            <param name="startPosition"></param>
+            <param name="endPosition"></param>
+            <param name="xlBordersIndex"></param>
+            <param name="xlLineStyle"></param>
+            <param name="weight"></param>
+        </member>
+        <member name="M:Edsa.MSOffice.ExcelSheetProxy.SetAlignment(System.Int32,System.Int32,Edsa.MSOffice.Alignment)">
+            <summary>
+            セルの横位置を設定する
+            対象セルは(1,1)～(rowIndex, columnIndex)まで
+            </summary>
+            <param name="rowIndex"></param>
+            <param name="columnIndex"></param>
+            <param name="alignment"></param>
+        </member>
+        <member name="M:Edsa.MSOffice.ExcelSheetProxy.SetAlignment(System.String,System.String,Edsa.MSOffice.Alignment)">
+            <summary>
+            セルの横位置を設定する
+            対象セルはstartPositionセルからendPositionセルまで
+            </summary>
+            <param name="startPosition"></param>
+            <param name="endPosition"></param>
+            <param name="alignment"></param>
+        </member>
+        <member name="M:Edsa.MSOffice.ExcelSheetProxy.SetVerticalAlignment(System.Int32,System.Int32,Edsa.MSOffice.VerticalAlignment)">
+            <summary>
+            セルの縦位置を設定する
+            対象セルは(1,1)～(rowIndex, columnIdex)まで
+            </summary>
+            <param name="rowIndex"></param>
+            <param name="columnIndex"></param>
+            <param name="verticalAlignment"></param>
+        </member>
+        <member name="M:Edsa.MSOffice.ExcelSheetProxy.SetVerticalAlignment(System.String,System.String,Edsa.MSOffice.VerticalAlignment)">
+            <summary>
+            セルの縦位置を設定する
+            対象セルはstartPositionセルからendPositionセルまで
+            </summary>
+            <param name="startPosition"></param>
+            <param name="endPosition"></param>
+            <param name="verticalAlignment"></param>
+        </member>
+        <member name="M:Edsa.MSOffice.ExcelSheetProxy.SetCellColor(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            セルの背景色を設定する
+            対象セルは(1,1)～(rowIndex, columnIndex)まで
+            </summary>
+            <param name="rowIndex"></param>
+            <param name="columnIndex"></param>
+            <param name="colorIndex"></param>
+        </member>
+        <member name="M:Edsa.MSOffice.ExcelSheetProxy.SetCellColor(System.String,System.String,System.Int32)">
+            <summary>
+            セルの背景色を設定する
+            対象セルはstartPositionセルからendPositionセルまで
+            </summary>
+            <param name="startPosition"></param>
+            <param name="endPosition"></param>
+            <param name="colorIndex"></param>
+        </member>
+        <member name="M:Edsa.MSOffice.ExcelSheetProxy.SetFontColor(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            セルの文字色を設定する
+            対象セルは(1,1)～(rowIndex, columnIndex)まで
+            </summary>
+            <param name="rowIndex"></param>
+            <param name="columnIndex"></param>
+            <param name="colorIndex"></param>
+        </member>
+        <member name="M:Edsa.MSOffice.ExcelSheetProxy.SetFontColor(System.String,System.String,System.Int32)">
+            <summary>
+            セルの文字色を設定する
+            対象セルはstartPositionセルからendPositionセルまで
+            </summary>
+            <param name="startPosition"></param>
+            <param name="endPosition"></param>
+            <param name="colorIndex"></param>
+        </member>
+        <member name="M:Edsa.MSOffice.ExcelSheetProxy.SetIndentLevel(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            セルのインデントを設定する
+            対象セルは(1,1)～(rowIndex, columnIndex)まで
+            </summary>
+            <param name="rowIndex"></param>
+            <param name="columnIndex"></param>
+            <param name="level"></param>
+        </member>
+        <member name="M:Edsa.MSOffice.ExcelSheetProxy.SetIndentLevel(System.String,System.String,System.Int32)">
+            <summary>
+            セルのインデントを設定する
+            対象セルはstartPositionセルからendPositionセルまで
+            </summary>
+            <param name="startPosition"></param>
+            <param name="endPosition"></param>
+            <param name="level"></param>
+        </member>
+        <member name="M:Edsa.MSOffice.ExcelSheetProxy.SetNumberFormat(System.Int32,System.Int32,System.String)">
+            <summary>
+            セルの表示形式を設定する
+            対象セルは(1,1)～(rowIndex, columnIndex)まで
+            </summary>
+            <param name="rowIndex"></param>
+            <param name="columnIndex"></param>
+            <param name="format"></param>
+        </member>
+        <member name="M:Edsa.MSOffice.ExcelSheetProxy.SetNumberFormat(System.String,System.String,System.String)">
+            <summary>
+            セルの表示形式を設定する
+            対象セルはstartPositionセルからendPositionセルまで
+            </summary>
+            <param name="startPosition"></param>
+            <param name="endPosition"></param>
+            <param name="format"></param>
+        </member>
+        <member name="M:Edsa.MSOffice.ExcelSheetProxy.SetShrinkToFit(System.Int32,System.Int32)">
+            <summary>
+            セルの文字を縮小して全体を表示する
+            対象セルは(1,1)～(rowIndex, columnIndex)まで
+            </summary>
+            <param name="rowIndex"></param>
+            <param name="columnIndex"></param>
+        </member>
+        <member name="M:Edsa.MSOffice.ExcelSheetProxy.SetShrinkToFit(System.String,System.String)">
+            <summary>
+            セルの文字を縮小して全体を表示する
+            対象セルはstartPositionセルからendPositionセルまで
+            </summary>
+            <param name="startPosition"></param>
+            <param name="endPosition"></param>
+        </member>
+        <member name="M:Edsa.MSOffice.ExcelSheetProxy.SetColumnWidth(System.Int32,System.Decimal)">
+            <summary>
+            列の幅を指定した列幅にする
+            </summary>
+            <param name="columnIndex"></param>
+            <param name="size"></param>
+        </member>
+        <member name="M:Edsa.MSOffice.ExcelSheetProxy.SetRowHeight(System.Int32,System.Decimal)">
+            <summary>
+            行の高さを指定した高さにする
+            </summary>
+            <param name="rowIndex"></param>
+            <param name="size"></param>
+        </member>
+        <member name="M:Edsa.MSOffice.ExcelSheetProxy.AdjustCellWidthHeight(System.Int32,System.Int32)">
+            <summary>
+            セル幅・高さを文字列の幅・高さに合わせる
+            対象セルは(1,1)～(lastRowIndex, lastColumnIndex)まで
+            </summary>
+            <param name="lastRowIndex"></param>
+            <param name="lastColumnIndex"></param>
+        </member>
+        <member name="M:Edsa.MSOffice.ExcelSheetProxy.Rename(System.String)">
+            <summary>
+            シート名を変更
+            </summary>
+            <param name="name"></param>
+        </member>
+        <member name="M:Edsa.MSOffice.ExcelSheetProxy.Copy(System.Boolean)">
+            <summary>
+            シートのコピー
+            </summary>
+            <param name="isAfter"></param>
+        </member>
+        <member name="M:Edsa.MSOffice.ExcelSheetProxy.Delete">
+            <summary>
+            シートの削除
+            </summary>
+        </member>
+        <member name="M:Edsa.MSOffice.ExcelSheetProxy.SetPageOrientation(Microsoft.Office.Interop.Excel.XlPageOrientation)">
+            <summary>
+            ページ設定-ページ-印刷の向き
+            </summary>
+            <param name="orientation">縦or横</param>
+        </member>
+        <member name="M:Edsa.MSOffice.ExcelSheetProxy.FitToPagesWide(System.Nullable{System.Int32})">
+            <summary>
+            ページ設定-ページ-拡大縮小印刷-横
+            </summary>
+            <param name="page">nullで無効にします</param>
+        </member>
+        <member name="M:Edsa.MSOffice.ExcelSheetProxy.FitToPagesTall(System.Nullable{System.Int32})">
+            <summary>
+            ページ設定-ページ-拡大縮小印刷-縦
+            </summary>
+            <param name="page">nullで無効にします</param>
+        </member>
+        <member name="M:Edsa.MSOffice.ExcelSheetProxy.SetZoom(System.Nullable{System.Int32})">
+            <summary>
+            ページ設定-ページ-拡大縮小印刷-拡大縮小
+            </summary>
+            <param name="scale">%で指定します。nullで無効にします</param>
+        </member>
+        <member name="M:Edsa.MSOffice.ExcelSheetProxy.Protect(System.String)">
+            <summary>
+            シートを編集できないように保護をかける(パスワード指定を推奨)
+            </summary>
+            <param name="password"></param>
+        </member>
+        <member name="M:Edsa.MSOffice.ExcelSheetProxy.Active">
+            <summary>
+            シートをアクティブシートにします。
+            </summary>
+        </member>
+        <member name="M:Edsa.MSOffice.ExcelSheetProxy.SetHyperlink(System.String,System.String,System.String)">
+            <summary>
+            ハイパーリンクテキストを設定します
+            同一ブック内のジャンプのみ
+            ジャンプ先は、シート名を必ず含める
+            </summary>
+            <param name="position"></param>
+            <param name="linkFullAddress"></param>
+            <param name="cellDisplayValue"></param>
+        </member>
+        <member name="M:Edsa.MSOffice.ExcelSheetProxy.SetHyperlink(System.Int32,System.Int32,System.String,System.String)">
+            <summary>
+            ハイパーリンクテキストを設定します
+            同一ブック内のジャンプのみ
+            ジャンプ先は、シート名を必ず含める
+            </summary>
+            <param name="rowNo"></param>
+            <param name="columnNo"></param>
+            <param name="linkFullAddress"></param>
+            <param name="cellDisplayValue"></param>
+        </member>
+        <member name="M:Edsa.MSOffice.ExcelSheetProxy.Print">
+            <summary>
+            印刷処理を実行します
+            </summary>
+        </member>
+        <member name="M:Edsa.MSOffice.ExcelSheetProxy.Display">
+            <summary>
+            指定したシートを表示します
+            </summary>
+        </member>
+        <member name="M:Edsa.MSOffice.ExcelSheetProxy.Hide">
+            <summary>
+            指定したシートを非表示にします
+            ブックに1シートしかない場合はエラーとなるのでご注意を)
+            </summary>
+        </member>
+        <member name="T:Edsa.MSOffice.ExcelProxy">
+            <summary>
+            煩雑なエクセル操作をラッピングしたプロクシクラス
+            usingしながら使用してください。
+            このインスタンスのGetSheet　メソッドにより、ExcelSheetProxyを取得し、
+            ExcelSheetProxyのGet、Setメソッドを利用して読み書きが可能です
+            </summary>
+        </member>
+        <member name="M:Edsa.MSOffice.ExcelProxy.GetSheet(System.Int32)">
+            <summary>
+            指定したシートがなかったら例外が発生
+            </summary>
+            <param name="i"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Edsa.MSOffice.ExcelProxy.GetSheetCount">
+            <summary>
+            シートの数を取得
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Edsa.MSOffice.ExcelProxy.IsInstalled">
+            <summary>
+            クライアントマシンにExcelがインストールされているかを確認
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Edsa.MSOffice.ExcelProxy.IsVersionOver2003">
+            <summary>
+            クライアントマシンにインストールされているExcelのバージョンが2003以上かを確認
+            インストールされていなかったら、falseを返す
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Edsa.MSOffice.ExcelProxy.GetSheet(System.String)">
+            <summary>
+            指定したシートがなかったら勝手につくって返す。
+            </summary>
+            <param name="sheetName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Edsa.MSOffice.ExcelProxy.ExistSheet(System.String)">
+            <summary>
+            指定した名称のシートが存在するかを確認
+            </summary>
+            <param name="sheetName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Edsa.MSOffice.ExcelProxy.ToAlphabet(System.Int32)">
+            <summary>
+            列番号をアルファベット列名(A,B,C～Z,AA～AZ…)に変換する。
+            </summary>
+            <param name="val"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

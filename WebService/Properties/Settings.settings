@@ -1,0 +1,120 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="SocketPlan.WebService.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=KSBU-AP;Initial Catalog=UnitWiring;Persist Security Info=True;User ID=sa;Password=81at84;Connection Timeout=600&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=KSBU-AP;Initial Catalog=UnitWiring;Persist Security Info=True;User ID=sa;Password=81at84;Connection Timeout=600</Value>
+    </Setting>
+    <Setting Name="ConnectionStringOfHRDInformationService" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=KSBU-AP;Initial Catalog=HRDInformationService;Persist Security Info=True;User ID=sa;Password=81at84;Connection Timeout=600&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=KSBU-AP;Initial Catalog=HRDInformationService;Persist Security Info=True;User ID=sa;Password=81at84;Connection Timeout=600</Value>
+    </Setting>
+    <Setting Name="ConnectionStringOfSiyoDataBroker" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=KSBU-AP;Initial Catalog=SiyoDataBroker;Persist Security Info=True;User ID=sa;Password=81at84;Connection Timeout=600&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=KSBU-AP;Initial Catalog=SiyoDataBroker;Persist Security Info=True;User ID=sa;Password=81at84;Connection Timeout=600</Value>
+    </Setting>
+    <Setting Name="ConnectionStringOfSekisanDataBroker" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=KSBU-AP;Initial Catalog=SekisanDataBroker;Persist Security Info=True;User ID=sa;Password=81at84;Connection Timeout=600&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=KSBU-AP;Initial Catalog=SekisanDataBroker;Persist Security Info=True;User ID=sa;Password=81at84;Connection Timeout=600</Value>
+    </Setting>
+    <Setting Name="SendSekisanDatasExe" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">\\Sy_sv1\Mgap\Hrd\SekisanDataBroker\SendSekisanDatas.exe</Value>
+    </Setting>
+    <Setting Name="ConnectionStringOfHRDInformationService4" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=KSBU-AP;Initial Catalog=HRDInformationService4;Persist Security Info=True;User ID=sa;Password=81at84;Connection Timeout=600&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=KSBU-AP;Initial Catalog=HRDInformationService4;Persist Security Info=True;User ID=sa;Password=81at84;Connection Timeout=600</Value>
+    </Setting>
+    <Setting Name="ExportDirectoryUserName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ksk-remote-sv\\administrator</Value>
+    </Setting>
+    <Setting Name="ExportDirectoryPassword" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">hrd2011!</Value>
+    </Setting>
+    <Setting Name="ConnectionStringOfHemsMaterialInformations" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=KSBU-AP;Initial Catalog=HemsMaterialInformations;Persist Security Info=True;User ID=sa;Password=81at84;Connection Timeout=600&lt;/ConnectionString&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=KSBU-AP;Initial Catalog=HemsMaterialInformations;Persist Security Info=True;User ID=sa;Password=81at84;Connection Timeout=600</Value>
+    </Setting>
+    <Setting Name="RimokonNicheReportDirectory" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">\\Denki-svr2\RimokonNiche\</Value>
+    </Setting>
+    <Setting Name="RimokonNichePatternImagePath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\inetpub\wwwroot\CHOPPER2013\RimokonNichePatterns\</Value>
+    </Setting>
+    <Setting Name="DipSwitchReportExportDirectory" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">\\Denki-svr2\DipSwitch\</Value>
+    </Setting>
+    <Setting Name="SpecialCircuitListExportDirectory" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">\\Denki-svr2\SpecialCircuitList\</Value>
+    </Setting>
+    <Setting Name="ElectricControlImage_Ari" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\inetpub\wwwroot\CHOPPER\EleConImages\On.jpg</Value>
+    </Setting>
+    <Setting Name="ElectricControlImage_Nashi" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\inetpub\wwwroot\CHOPPER\EleConImages\Off.jpg</Value>
+    </Setting>
+    <Setting Name="PowerConditionerNumberImageFolderPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\inetpub\wwwroot\CHOPPER\PowConNumImages\</Value>
+    </Setting>
+    <Setting Name="ConnectionStringOfPhotovoltaic" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=KSBU-AP;Initial Catalog=Photovoltaic;Persist Security Info=True;User ID=sa;Password=81at84;Connection Timeout=600&lt;/ConnectionString&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=KSBU-AP;Initial Catalog=Photovoltaic;Persist Security Info=True;User ID=sa;Password=81at84;Connection Timeout=600</Value>
+    </Setting>
+    <Setting Name="StandardItemSwitchingDate" Type="System.DateTime" Scope="Application">
+      <Value Profile="(Default)">2016-09-01</Value>
+    </Setting>
+    <Setting Name="XGWSettingReortExportDirectory" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\pdf\</Value>
+    </Setting>
+    <Setting Name="NissanServiceUrl" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://localhost/NissanWebService/NissanWebService.asmx</Value>
+    </Setting>
+    <Setting Name="ConnectionStringOfHtiKibiroi" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=KSBU-AP;Initial Catalog=HtiKibiroi;Persist Security Info=True;User ID=sa;Password=81at84;Connection Timeout=600&lt;/ConnectionString&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=KSBU-AP;Initial Catalog=HtiKibiroi;Persist Security Info=True;User ID=sa;Password=81at84;Connection Timeout=600</Value>
+    </Setting>
+    <Setting Name="NissanServiceUserName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Administrator</Value>
+    </Setting>
+    <Setting Name="NissanServicePassword" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">system</Value>
+    </Setting>
+    <Setting Name="ConnectionStringOfFlagSetting" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=KSBU-AP;Initial Catalog=FlagSetting;Persist Security Info=True;User ID=sa;Password=81at84;Connection Timeout=600&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=KSBU-AP;Initial Catalog=FlagSetting;Persist Security Info=True;User ID=sa;Password=81at84;Connection Timeout=600</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

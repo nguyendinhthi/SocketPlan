@@ -1,0 +1,33 @@
+﻿▼Common
+→WinUIのいろんなところから参照するファイル（定数、グローバル変数、便利メソッドなど）
+
+▼Drawers
+→作図クラス、図面データ取得クラス
+
+▼Entities（入れ物）
+├CADEntity-----→シンボルや配線などの図形クラス
+└EdsaDataEntity→EdsaEntityのpartialクラス
+その他
+　CadObjectContainerは図面データをガツっと取得するクラスです。お世話になります。
+
+▼Forms（画面）
+├CommandForms----→ツールバーみたいなフォームはココ
+├GeneralForms----→ふつーのフォーム
+├MaintenanceForms→メンテ画面
+├ProgressDialog--→進捗表示画面
+└UserControls----→ユーザーコントロール
+その他
+　ダイアログで使うメッセージはココに突っ込んでいます。
+
+▼Plans
+→図面自動生成クラス（図面をまるまる１つ生成しちゃう系）
+
+▼Processes
+→プログレスバーを表示する大きめの作図・出力クラス（図面自動記入とか拾いデータ出力とか）
+
+▼Reports
+→CAD以外の帳票(Excel、CSV)を出力するクラス
+
+▼Validation
+→パスワード入力で回避可能なエラーダイアログ処理（トリッキーなのでこれだけ切り分けました）
+→図面の不備チェックロジックもココです。

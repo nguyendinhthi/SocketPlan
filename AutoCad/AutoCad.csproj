@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E9E0145B-F848-4B39-80B4-16774BBF1449}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AutoCadProxy</RootNamespace>
+    <AssemblyName>AutoCadProxy</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Interop.LT_VBCOMLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AcDbEntities\AbstractViewportTable.cs" />
+    <Compile Include="AcDbEntities\AbstractViewTableRecord.cs" />
+    <Compile Include="AcDbEntities\RegAppTable.cs" />
+    <Compile Include="AcDbEntities\Arc.cs" />
+    <Compile Include="AcDbEntities\Attribute.cs" />
+    <Compile Include="AcDbEntities\BlockReference.cs" />
+    <Compile Include="AcDbEntities\BlockTable.cs" />
+    <Compile Include="AcDbEntities\BlockTableRecord.cs" />
+    <Compile Include="AcDbEntities\Curve.cs" />
+    <Compile Include="AcDbEntities\Database.cs" />
+    <Compile Include="AcDbEntities\Dictionary.cs" />
+    <Compile Include="AcDbEntities\Dimension.cs" />
+    <Compile Include="AcDbEntities\Ellipse.cs" />
+    <Compile Include="AcDbEntities\Entity.cs" />
+    <Compile Include="AcDbEntities\LayerTable.cs" />
+    <Compile Include="AcDbEntities\LayerTableRecord.cs" />
+    <Compile Include="AcDbEntities\Layout.cs" />
+    <Compile Include="AcDbEntities\Leader.cs" />
+    <Compile Include="AcDbEntities\Line.cs" />
+    <Compile Include="AcDbEntities\LinetypeTable.cs" />
+    <Compile Include="AcDbEntities\MText.cs" />
+    <Compile Include="AcDbEntities\Object.cs" />
+    <Compile Include="AcDbEntities\PlotSettings.cs" />
+    <Compile Include="AcDbEntities\Point.cs" />
+    <Compile Include="AcDbEntities\Polyline.cs" />
+    <Compile Include="AcDbEntities\Ray.cs" />
+    <Compile Include="AcDbEntities\SymbolTable.cs" />
+    <Compile Include="AcDbEntities\SymbolTableRecord.cs" />
+    <Compile Include="AcDbEntities\Text.cs" />
+    <Compile Include="AcDbEntities\TextStyleTable.cs" />
+    <Compile Include="AcDbEntities\TextStyleTableRecord.cs" />
+    <Compile Include="AcDbEntities\Utility.cs" />
+    <Compile Include="AcDbEntities\Viewport.cs" />
+    <Compile Include="AcDbEntities\ViewportTable.cs" />
+    <Compile Include="AcDbEntities\ViewportTableRecord.cs" />
+    <Compile Include="AutoCad.Command.cs">
+      <DependentUpon>AutoCad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AutoCad.cs" />
+    <Compile Include="AutoCad.Db.cs">
+      <DependentUpon>AutoCad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AutoCad.File.cs">
+      <DependentUpon>AutoCad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AutoCad.Selection.cs">
+      <DependentUpon>AutoCad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AutoCad.Status.cs">
+      <DependentUpon>AutoCad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AutoCadException.cs" />
+    <Compile Include="ConstantValues\CadColor.cs" />
+    <Compile Include="ConstantValues\Direction.cs" />
+    <Compile Include="ConstantValues\Orientation.cs" />
+    <Compile Include="ConstantValues\Side.cs" />
+    <Compile Include="Entities\Rectangle.cs" />
+    <Compile Include="Entities\Result.cs" />
+    <Compile Include="Filter.cs" />
+    <Compile Include="FilterOption.cs" />
+    <Compile Include="ConstantValues\Font.cs" />
+    <Compile Include="ConstantValues\ObjectType.cs" />
+    <Compile Include="Entities\PointD.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Calc.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="References\Interop.LT_VBCOMLib.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AcDbEntities\AcDbClassDiagram.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="AcDbEntities\Circle.cs" />
+    <Compile Include="AcDbEntities\Group.cs" />
+    <Compile Include="AcDbEntities\Hatch.cs" />
+    <Compile Include="AcDbEntities\LinetypeTableRecord.cs" />
+    <Compile Include="AcDbEntities\Region.cs" />
+    <Compile Include="AutoCad.Reactor.cs">
+      <DependentUpon>AutoCad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConstantValues\Align.cs" />
+    <Compile Include="ConstantValues\Linetype.cs" />
+    <Compile Include="ConstantValues\LineWeight.cs" />
+    <Compile Include="AutoCad.Drawer.cs">
+      <DependentUpon>AutoCad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DrawResult.cs" />
+    <Compile Include="LtVbCom.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="WindowController.cs" />
+    <Compile Include="WindowFinder.cs">
+      <DependentUpon>WindowController.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

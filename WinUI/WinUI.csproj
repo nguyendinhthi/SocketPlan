@@ -1,0 +1,927 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{156F2665-B089-4B9B-B513-B251F558B9BE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SocketPlan.WinUI</RootNamespace>
+    <AssemblyName>SocketPlan.WinUI</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ApplicationIcon>UnitWiring.ico</ApplicationIcon>
+    <SignManifests>true</SignManifests>
+    <ManifestCertificateThumbprint>9DB0C193A6D46C833491E40B473EA6EA9A46E2B4</ManifestCertificateThumbprint>
+    <ManifestKeyFile>WinUI_1_TemporaryKey.pfx</ManifestKeyFile>
+    <TargetZone>LocalIntranet</TargetZone>
+    <GenerateManifests>true</GenerateManifests>
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+    <PublishUrl>C:\Work\SocketPlan_Release\WinUI\</PublishUrl>
+    <Install>false</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>UnitWiring</ProductName>
+    <PublisherName>HRD%28S%29PTE.,LTD.</PublisherName>
+    <ApplicationRevision>32</ApplicationRevision>
+    <ApplicationVersion>1.0.3.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Edsa.AutoCadProxy, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\Edsa.AutoCadProxy.dll</HintPath>
+    </Reference>
+    <Reference Include="Edsa.CustomControl, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b0fed3d79c0ebb91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\Edsa.CustomControl.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelProxy, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\ExcelProxy.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.LT_VBCOMLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\Interop.LT_VBCOMLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+    <Reference Include="Microsoft.VisualBasic">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="PdfSharp-WPF, Version=1.32.2608.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\PdfSharp-WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp.Xps, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\PdfSharp.Xps.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Drawers\ClipDrawer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Drawers\SymbolDrawer.cs" />
+    <Compile Include="Entities\CADEntity\CelingReciever.cs" />
+    <Compile Include="Entities\CADEntity\ConnectorCheckBox.cs" />
+    <Compile Include="Entities\CADEntity\MarkingWire.cs" />
+    <Compile Include="Entities\CADEntity\Plate.cs" />
+    <Compile Include="Entities\CADEntity\RoomObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\CADEntity\SocketBoxObject.cs" />
+    <Compile Include="Entities\CadObjectContainer.WireCalculation.cs" />
+    <Compile Include="Entities\EdsaDataEntity\JboxColorEntry.cs" />
+    <Compile Include="Entities\EdsaDataEntity\KansenBuzaiItem.cs" />
+    <Compile Include="Entities\EdsaDataEntity\LightSerial.cs">
+      <SubType>code</SubType>
+    </Compile>
+    <Compile Include="Entities\EdsaDataEntity\NotNameHotaruSwitch.cs" />
+    <Compile Include="Entities\EdsaDataEntity\PartsColor.cs" />
+    <Compile Include="Entities\EdsaDataEntity\PartsColorEntry.cs" />
+    <Compile Include="Entities\EdsaDataEntity\RimokonNicheDetail.cs" />
+    <Compile Include="Entities\CADEntity\Switch.cs" />
+    <Compile Include="Entities\EdsaDataEntity\SingleSocketBoxEquipment.cs" />
+    <Compile Include="Entities\EdsaDataEntity\SocketBoxCategory.Partial.cs" />
+    <Compile Include="Entities\EdsaDataEntity\SocketBoxDetailComment.Partial.cs" />
+    <Compile Include="Entities\EdsaDataEntity\SocketBoxPattern.Partial.cs" />
+    <Compile Include="Entities\EdsaDataEntity\SocketBoxPatternDetail.Partial.cs" />
+    <Compile Include="Entities\EdsaDataEntity\T_Cad_Data.cs" />
+    <Compile Include="Entities\EdsaDataEntity\FloorText.cs" />
+    <Compile Include="Entities\EdsaDataEntity\SocketBoxSpecific.Partial.cs" />
+    <Compile Include="Forms\CommandForms\AutoGenerateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CommandForms\AutoGenerateForm.Designer.cs">
+      <DependentUpon>AutoGenerateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CommandForms\Command0Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CommandForms\Command0Form.Designer.cs">
+      <DependentUpon>Command0Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CommandForms\OutputCSVForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CommandForms\OutputCSVForm.Designer.cs">
+      <DependentUpon>OutputCSVForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CommandForms\EditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CommandForms\EditForm.Designer.cs">
+      <DependentUpon>EditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CommandForms\FramingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CommandForms\FramingForm.Designer.cs">
+      <DependentUpon>FramingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CommandForms\MaintenanceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CommandForms\MaintenanceForm.Designer.cs">
+      <DependentUpon>MaintenanceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GeneralForms\AuthenticationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GeneralForms\AuthenticationForm.Designer.cs">
+      <DependentUpon>AuthenticationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GeneralForms\LuckingRoomColorEntryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GeneralForms\LuckingRoomColorEntryForm.Designer.cs">
+      <DependentUpon>LuckingRoomColorEntryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GeneralForms\RoomInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GeneralForms\RoomInfoForm.Designer.cs">
+      <DependentUpon>RoomInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GeneralForms\RoomSelectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GeneralForms\RoomSelectForm.Designer.cs">
+      <DependentUpon>RoomSelectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GeneralForms\SocketBoxSpecificSelectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GeneralForms\SocketBoxSpecificSelectForm.Designer.cs">
+      <DependentUpon>SocketBoxSpecificSelectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GeneralForms\TextSelectForSwitchSerialFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GeneralForms\TextSelectForSwitchSerialFrom.Designer.cs">
+      <DependentUpon>TextSelectForSwitchSerialFrom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Drawers\LayoutDrawer.cs" />
+    <Compile Include="Common\Paths.cs" />
+    <Compile Include="Forms\GeneralForms\OtherColorSelectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GeneralForms\OtherColorSelectForm.Designer.cs">
+      <DependentUpon>OtherColorSelectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GeneralForms\ManualComposeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GeneralForms\ManualComposeForm.Designer.cs">
+      <DependentUpon>ManualComposeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UserControls\SwitchSizeEntryPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControls\SwitchSizeEntryPanel.Designer.cs">
+      <DependentUpon>SwitchSizeEntryPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImportExport\ExportedItems\SocketBox.cs">
+      <SubType>code</SubType>
+    </Compile>
+    <Compile Include="Plans\Framing.cs" />
+    <Compile Include="Plans\SocketPlanCreator.cs" />
+    <Compile Include="Entities\EdsaDataEntity\ProductVa.cs" />
+    <Compile Include="Entities\EdsaDataEntity\SiyoHeya.cs" />
+    <Compile Include="Entities\HemsParam.cs" />
+    <Compile Include="Drawers\TextDrawer.cs" />
+    <Compile Include="Drawers\ViewController.cs" />
+    <Compile Include="Entities\CadObjectContainerForOptionPicking.cs" />
+    <Compile Include="Drawers\XData.cs" />
+    <Compile Include="Drawers\Filters.cs" />
+    <Compile Include="Forms\ProgressDialog\ProgressManager.cs" />
+    <Compile Include="Forms\ProgressDialog\ProgressMethodAttribute.cs" />
+    <Compile Include="Processes\Exporter.cs" />
+    <Compile Include="Processes\LightSerialConverter.cs" />
+    <Compile Include="Processes\MasterFileLoader.cs" />
+    <Compile Include="Processes\SaveAndPlot.cs" />
+    <Compile Include="SocketPlanMasterMaintenance\AddOtherColorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SocketPlanMasterMaintenance\AddOtherColorForm.Designer.cs">
+      <DependentUpon>AddOtherColorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SocketPlanMasterMaintenance\EquipmentSelectionDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SocketPlanMasterMaintenance\SingleSymbolMasterMaintenanceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SocketPlanMasterMaintenance\SingleSymbolMasterMaintenanceForm.Designer.cs">
+      <DependentUpon>SingleSymbolMasterMaintenanceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SocketPlanMasterMaintenance\SocketPlanMasterMaintenanceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SocketPlanMasterMaintenance\SocketPlanMasterMaintenanceForm.Designer.cs">
+      <DependentUpon>SocketPlanMasterMaintenanceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SocketPlanMasterMaintenance\TextSelectionDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SocketPlanMasterMaintenance\SocketSpecificMasterMaintenanceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SocketPlanMasterMaintenance\SocketSpecificMasterMaintenanceForm.Designer.cs">
+      <DependentUpon>SocketSpecificMasterMaintenanceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SocketPlanMasterMaintenance\ExempltionSubeteMasterMaintenanceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SocketPlanMasterMaintenance\ExempltionSubeteMasterMaintenanceForm.Designer.cs">
+      <DependentUpon>ExempltionSubeteMasterMaintenanceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Validation\ApprovalControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Validation\ApprovalControl.Designer.cs">
+      <DependentUpon>ApprovalControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Validation\InfoPanel\TextInfoPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Validation\InfoPanel\TextInfoPanel.Designer.cs">
+      <DependentUpon>TextInfoPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\CADEntity\CadObject.cs" />
+    <Compile Include="Validation\InfoPanel\RoomInfoPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Validation\InfoPanel\RoomInfoPanel.Designer.cs">
+      <DependentUpon>RoomInfoPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Validation\InfoPanel\StringInfoPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Validation\InfoPanel\StringInfoPanel.Designer.cs">
+      <DependentUpon>StringInfoPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Validation\DoNothingException.cs" />
+    <Compile Include="Validation\ErrorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Validation\ErrorDialog.Designer.cs">
+      <DependentUpon>ErrorDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UserControls\SelectableTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControls\SelectableTextBox.Designer.cs">
+      <DependentUpon>SelectableTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Validation\InfoPanel\InfoPanelBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Validation\InfoPanel\InfoPanelBase.Designer.cs">
+      <DependentUpon>InfoPanelBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\EdsaDataEntity\Comment.cs" />
+    <Compile Include="Validation\InfoPanel\SymbolInfoPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Validation\InfoPanel\SymbolInfoPanel.Designer.cs">
+      <DependentUpon>SymbolInfoPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Validation\InfoPanel\WireInfoPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Validation\InfoPanel\WireInfoPanel.Designer.cs">
+      <DependentUpon>WireInfoPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\CADEntity\Light.cs" />
+    <Compile Include="Forms\GeneralForms\EquipmentSelectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GeneralForms\EquipmentSelectForm.Designer.cs">
+      <DependentUpon>EquipmentSelectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\ConstantValues.cs" />
+    <Compile Include="Entities\CADEntity\CeilingPanel.cs" />
+    <Compile Include="Entities\EdsaDataEntity\Equipment.cs" />
+    <Compile Include="Entities\CADEntity\Attribute.cs" />
+    <Compile Include="Entities\CADEntity\Drawing.cs" />
+    <Compile Include="Entities\CADEntity\RisingWire.cs" />
+    <Compile Include="Common\HouseSpecs.cs" />
+    <Compile Include="Common\Static.cs" />
+    <Compile Include="Entities\CADEntity\Wire.cs" />
+    <Compile Include="Forms\GeneralForms\EquipmentSelectBaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GeneralForms\EquipmentSelectBaseForm.Designer.cs">
+      <DependentUpon>EquipmentSelectBaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GeneralForms\OpenDrawingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GeneralForms\OpenDrawingForm.Designer.cs">
+      <DependentUpon>OpenDrawingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProgressDialog\ProgressDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProgressDialog\ProgressDialog.Designer.cs">
+      <DependentUpon>ProgressDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CommandForms\CommandBaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CommandForms\CommandBaseForm.Designer.cs">
+      <DependentUpon>CommandBaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\HotKey.cs" />
+    <Compile Include="Forms\Message.cs" />
+    <Compile Include="Forms\MessageDialog.cs" />
+    <Compile Include="Forms\Messages.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\CommandForms\AutoGenerateForm.resx">
+      <DependentUpon>AutoGenerateForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CommandForms\Command0Form.resx">
+      <DependentUpon>Command0Form.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CommandForms\OutputCSVForm.resx">
+      <DependentUpon>OutputCSVForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CommandForms\EditForm.resx">
+      <DependentUpon>EditForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CommandForms\FramingForm.resx">
+      <DependentUpon>FramingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CommandForms\MaintenanceForm.resx">
+      <DependentUpon>MaintenanceForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GeneralForms\AuthenticationForm.resx">
+      <DependentUpon>AuthenticationForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GeneralForms\LuckingRoomColorEntryForm.resx">
+      <DependentUpon>LuckingRoomColorEntryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GeneralForms\RoomInfoForm.resx">
+      <DependentUpon>RoomInfoForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GeneralForms\RoomSelectForm.resx">
+      <DependentUpon>RoomSelectForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GeneralForms\SocketBoxSpecificSelectForm.resx">
+      <DependentUpon>SocketBoxSpecificSelectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GeneralForms\TextSelectForSwitchSerialFrom.resx">
+      <DependentUpon>TextSelectForSwitchSerialFrom.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GeneralForms\OtherColorSelectForm.resx">
+      <DependentUpon>OtherColorSelectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GeneralForms\ManualComposeForm.resx">
+      <DependentUpon>ManualComposeForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserControls\SwitchSizeEntryPanel.resx">
+      <DependentUpon>SwitchSizeEntryPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SocketPlanMasterMaintenance\AddOtherColorForm.resx">
+      <DependentUpon>AddOtherColorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SocketPlanMasterMaintenance\SingleSymbolMasterMaintenanceForm.resx">
+      <DependentUpon>SingleSymbolMasterMaintenanceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SocketPlanMasterMaintenance\SocketPlanMasterMaintenanceForm.resx">
+      <DependentUpon>SocketPlanMasterMaintenanceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SocketPlanMasterMaintenance\SocketSpecificMasterMaintenanceForm.resx">
+      <DependentUpon>SocketSpecificMasterMaintenanceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SocketPlanMasterMaintenance\ExempltionSubeteMasterMaintenanceForm.resx">
+      <DependentUpon>ExempltionSubeteMasterMaintenanceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Validation\ApprovalControl.resx">
+      <DependentUpon>ApprovalControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Validation\InfoPanel\TextInfoPanel.resx">
+      <DependentUpon>TextInfoPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Validation\InfoPanel\RoomInfoPanel.resx">
+      <DependentUpon>RoomInfoPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Validation\ErrorDialog.resx">
+      <DependentUpon>ErrorDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CommandForms\CommandBaseForm.resx">
+      <DependentUpon>CommandBaseForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GeneralForms\EquipmentSelectBaseForm.resx">
+      <DependentUpon>EquipmentSelectBaseForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GeneralForms\EquipmentSelectForm.resx">
+      <DependentUpon>EquipmentSelectForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GeneralForms\OpenDrawingForm.resx">
+      <DependentUpon>OpenDrawingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProgressDialog\ProgressDialog.resx">
+      <DependentUpon>ProgressDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GeneralForms\TextSelectForAttributeForm.resx">
+      <DependentUpon>TextSelectForAttributeForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GeneralForms\TextSelectForm.resx">
+      <DependentUpon>TextSelectForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserControls\SelectableTextBox.resx">
+      <DependentUpon>SelectableTextBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Validation\InfoPanel\InfoPanelBase.resx">
+      <DependentUpon>InfoPanelBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GeneralForms\TextSelectBaseForm.resx">
+      <DependentUpon>TextSelectBaseForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Validation\InfoPanel\StringInfoPanel.resx">
+      <DependentUpon>StringInfoPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Validation\InfoPanel\SymbolInfoPanel.resx">
+      <DependentUpon>SymbolInfoPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Validation\InfoPanel\WireInfoPanel.resx">
+      <DependentUpon>WireInfoPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Forms\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GeneralForms\TextSelectBaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GeneralForms\TextSelectBaseForm.Designer.cs">
+      <DependentUpon>TextSelectBaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\CADEntity\Symbol.cs" />
+    <Compile Include="Forms\GeneralForms\TextSelectForAttributeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GeneralForms\TextSelectForAttributeForm.Designer.cs">
+      <DependentUpon>TextSelectForAttributeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GeneralForms\TextSelectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GeneralForms\TextSelectForm.Designer.cs">
+      <DependentUpon>TextSelectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Utilities.cs" />
+    <Compile Include="SocketPlanServiceNoTimeout.cs">
+    </Compile>
+    <Compile Include="Validation\Validation.I.Partial.cs" />
+    <Compile Include="Validation\Validation.Jakuden.Partial.cs" />
+    <Compile Include="Validation\Validation.S.Partial.cs" />
+    <Compile Include="Validation\Validation.T.Partial.cs" />
+    <Compile Include="Entities\CadObjectContainer.cs" />
+    <Compile Include="Entities\CADEntity\HouseObject.cs" />
+    <Compile Include="Entities\CADEntity\TextObject.cs" />
+    <Compile Include="Common\UnitWiring.cs" />
+    <Compile Include="Validation\Validation.cs" />
+    <Compile Include="Validation\Validator.cs" />
+    <Compile Include="Web References\SocketPlanServiceReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="UnitWiring.ico" />
+    <None Include="Web References\SocketPlanServiceReference\Block.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SocketPlanServiceReference\Comment.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SocketPlanServiceReference\CommentCategory.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SocketPlanServiceReference\CommentSpecification.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SocketPlanServiceReference\Construction.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SocketPlanServiceReference\ConstructionSchedule.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SocketPlanServiceReference\ContractAmpere.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SocketPlanServiceReference\ConvertionLightSerial.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SocketPlanServiceReference\CupboardSerial.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SocketPlanServiceReference\DefaultPartsColor.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SocketPlanServiceReference\DrawingParameter.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SocketPlanServiceReference\ElectricContract.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SocketPlanServiceReference\Equipment.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SocketPlanServiceReference\EquipmentCustomAction.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SocketPlanServiceReference\EquipmentKind.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SocketPlanServiceReference\EquipmentSpecification.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SocketPlanServiceReference\FloorText.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SocketPlanServiceReference\HouseTypeGroupDetail.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SocketPlanServiceReference\HouseTypeGroupStandardItem.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SocketPlanServiceReference\InteriorEstimateRoom.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SocketPlanServiceReference\InvalidDownLightSerial.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SocketPlanServiceReference\JboxColor.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SocketPlanServiceReference\JboxColorEntry.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SocketPlanServiceReference\JboxItem.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SocketPlanServiceReference\KansenAllowance.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SocketPlanServiceReference\KansenBuzaiItem.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SocketPlanServiceReference\Layout.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SocketPlanServiceReference\LayoutText.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SocketPlanServiceReference\LightElectrical.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SocketPlanServiceReference\LightElectricalWireKind.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SocketPlanServiceReference\LightSerial.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SocketPlanServiceReference\LightSerialCategory.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SocketPlanServiceReference\LightSerialItem.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SocketPlanServiceReference\NotNameHotaruSwitch.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SocketPlanServiceReference\NotNameHotaruSwitchSerial.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SocketPlanServiceReference\OptionPickingItemsEx.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SocketPlanServiceReference\OptionPickingLog.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SocketPlanServiceReference\PartsColor.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SocketPlanServiceReference\PartsColorEntry.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SocketPlanServiceReference\PendantLightSerial.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SocketPlanServiceReference\ProductItem.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SocketPlanServiceReference\ProductVa.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SocketPlanServiceReference\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\SocketPlanServiceReference\RelatedEquipment.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SocketPlanServiceReference\RemoconItem.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SocketPlanServiceReference\RemoconZumenItem.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SocketPlanServiceReference\RimokonNicheEntry.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SocketPlanServiceReference\RimokonNicheHolePattern.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SocketPlanServiceReference\RimokonNichePattern.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SocketPlanServiceReference\Room.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SocketPlanServiceReference\RoomLayoutsForKibiroi.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SocketPlanServiceReference\RoomStandardItem.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SocketPlanServiceReference\SelectionCategory.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SocketPlanServiceReference\SelectionCategoryDetail.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SocketPlanServiceReference\Setting.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SocketPlanServiceReference\ShikakuTableEntry.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SocketPlanServiceReference\ShikakuTableItem.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SocketPlanServiceReference\ShipmentRequest.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SocketPlanServiceReference\SingleSocketBoxEquipment.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SocketPlanServiceReference\SiyoHeya.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SocketPlanServiceReference\SocketBox.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SocketPlanServiceReference\SocketBoxCategory.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SocketPlanServiceReference\SocketBoxPattern.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SocketPlanServiceReference\SocketBoxPatternColor.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SocketPlanServiceReference\SocketBoxPatternDetail.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SocketPlanServiceReference\SocketBoxPickingItem.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SocketPlanServiceReference\SocketBoxSpecific.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SocketPlanServiceReference\SocketBoxSpecificCategory.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SocketPlanServiceReference\SocketPlanService.disco" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Web References\SocketPlanServiceReference\SocketPlanService.wsdl" />
+    <None Include="Web References\SocketPlanServiceReference\SolarBreaker.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SocketPlanServiceReference\SolarComposition.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SocketPlanServiceReference\SpcadPlanInfos_Extract.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SocketPlanServiceReference\Specification.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SocketPlanServiceReference\SubeteExempleEquipment.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SocketPlanServiceReference\SwitchLightSerial.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SocketPlanServiceReference\Text.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SocketPlanServiceReference\TextItem.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SocketPlanServiceReference\UsableBracketLightSerial.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SocketPlanServiceReference\UsableLightSerial.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SocketPlanServiceReference\UsableRohmOfLightSerial.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SocketPlanServiceReference\WireItem.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SocketPlanServiceReference\WireSerial.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="WinUI_1_TemporaryKey.pfx" />
+    <None Include="WinUI_TemporaryKey.pfx" />
+    <None Include="WinUI内のフォルダ分けについて.txt" />
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="SocketPlan.WinUI.XmlSerializers">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="stdole">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://hrdapps22/SocketPlan/SocketPlanService.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\SocketPlanServiceReference\</RelPath>
+      <UpdateFromURL>http://hrdapps22/SocketPlan/SocketPlanService.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>SocketPlan_WinUI_SocketPlanServiceReference_SocketPlanService</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Forms\Temporary\" />
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

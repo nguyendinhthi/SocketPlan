@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoCad", "AutoCad\AutoCad.csproj", "{E9E0145B-F848-4B39-80B4-16774BBF1449}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocketPlanMasterMaintenance", "SocketPlanMasterMaintenance\SocketPlanMasterMaintenance.csproj", "{4DB8627D-00F4-4ED8-9654-E794A25CCB1C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebService", "WebService\WebService.csproj", "{908030D3-77DE-4806-9A90-155E3ED96BA5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinUI", "WinUI\WinUI.csproj", "{156F2665-B089-4B9B-B513-B251F558B9BE}"
+EndProject
+Global
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E9E0145B-F848-4B39-80B4-16774BBF1449}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9E0145B-F848-4B39-80B4-16774BBF1449}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9E0145B-F848-4B39-80B4-16774BBF1449}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9E0145B-F848-4B39-80B4-16774BBF1449}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DB8627D-00F4-4ED8-9654-E794A25CCB1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DB8627D-00F4-4ED8-9654-E794A25CCB1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DB8627D-00F4-4ED8-9654-E794A25CCB1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DB8627D-00F4-4ED8-9654-E794A25CCB1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{908030D3-77DE-4806-9A90-155E3ED96BA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{908030D3-77DE-4806-9A90-155E3ED96BA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{908030D3-77DE-4806-9A90-155E3ED96BA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{908030D3-77DE-4806-9A90-155E3ED96BA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{156F2665-B089-4B9B-B513-B251F558B9BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{156F2665-B089-4B9B-B513-B251F558B9BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{156F2665-B089-4B9B-B513-B251F558B9BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{156F2665-B089-4B9B-B513-B251F558B9BE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
